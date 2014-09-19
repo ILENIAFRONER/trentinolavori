@@ -26,7 +26,12 @@
 ================================================== -->
   <body>
 	
-  	<div class="intro">
+  	<div id='landing' class="intro">
+	   <table width="100%" height="100%" align="center" valign="center" style="text-align: center">
+	   <tr><td>
+	      <img src="logo.png" alt="logo" />
+	   </td></tr>
+	   </table>
 		<!--div id='logo'>
 			<a href="#about"><img class="downArrow" src="logo.png"></a>
 		</div-->
@@ -37,7 +42,7 @@
 <div class="container-fluid">
       <hr class="storia"></hr>
       <div class="row storia">
-        <div class="col-md-offset-2 col-md-8">
+        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
 	  <p style="font-size: 30px"><b>Trentino Lavori</b> di Zampedri Daniele nasce da una lunga
 tradizione familiare nei lavori edili stradali.
 La società opera nel settore adattandosi alle richieste del
@@ -51,44 +56,65 @@ presupposti per il successo.</p>
       <hr class="lavori"></hr>
 
       <div class="row">
-        <div class="col-xs-offset-2 col-xs-2">
+        <div class="col-xs-offset-1 col-sm-offset-2 col-sm-2 col-xs-10 lavori" style="text-align: center">
           <img src="cazzuola.jpg" class="img-responsive" alt="Responsive image">
           <div class="text-center" style="padding: 10px;">  
-            <h3>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </h3>
-            <p class="lead">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <h3>COSTRUZIONI STRADALI E PAVIMENTAZIONI</h3>
+            <p class="lead">Rilevamenti stradali,
+fresature, segnaletica.
+La ricerca continua unita
+a lavoratori altamente
+specializzati.</p>
           </div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-xs-2">
+        <div class="col-xs-offset-1 col-sm-offset-0 col-sm-2 col-xs-10 lavori">
 	  <img src="nbc.jpg" class="img-responsive" alt="Responsive image">        
           <div class="text-center" style="padding: 10px;">  
-            <h3>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </h3>
-            <p class="lead">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <h3>BONIFICHE E SERVIZI AMBIENTALI</h3>
+            <p class="lead">Individuazione, progettazione
+e realizazione delle
+migliori techiche di
+bonifica con prodotti
+all'avanguardia.</p>
           </div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-xs-2">
+        <div class="col-xs-offset-1 col-sm-offset-0 col-sm-2 col-xs-10 lavori">
 	  <img src="palazzo.jpg" class="img-responsive" alt="Responsive image">          
           <div class="text-center" style="padding: 10px;">  
-            <h3>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </h3>
-            <p class="lead">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <h4>EDILIZIA CIVILE E INDUSTRIALE</h4>
+            <p class="lead">Abitazioni, ristrutturazioni,
+uffici, studi professionali,
+punti vendita, manutenzioni.
+Cura e funzionalità.</p>
           </div>
         </div><!-- /.col-lg-4 -->
-        <div class="col-xs-2">
+        <div class="col-xs-offset-1 col-sm-offset-0 col-sm-2 col-xs-10 lavori">
 	  <img src="ruspa.jpg" class="img-responsive" alt="Responsive image">
           <div class="text-center" style="padding: 10px;">  
-            <h3>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </h3>
-            <p class="lead">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <h3>MOVIMENTO TERRA</h3>
+            <p class="lead">Scavi di sbancamento,
+bonifiche di terreni,
+abbattimento in profondità
+di pali in ghisa.</p>
           </div>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
       <hr class="lavori-ultimo"></hr>
 </div>
 
-<div class="overlay" onClick="style.pointerEvents='none'"></div>
 <iframe width="100%" height="340" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Via%20Fersina%2C%20Pergine%20Valsugana%2C%20Trentino%2C%20Italy&key=AIzaSyBRFlb-xTkPWLn3vpHFD9y5cya82QWLOeg"></iframe> 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	$('#landing').height($(window).height());
+});
+$(window).resize(function () {
+	$('#landing').height($(window).height());
+});
+</script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/docs.min.js"></script>
   </body>
