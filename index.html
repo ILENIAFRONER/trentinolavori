@@ -168,16 +168,22 @@ E-mail: info@trentinolavori.it</p>
     <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
     <script src="bootstrap-3.2.0-dist/assets/js/docs.min.js"></script>
 <script type="text/javascript">
-$(function () {
+function fixme () {
 	var footer = $('#my-footer')
 	$('#note-legali').css('margin-bottom',(footer.height() + 60) + 'px');
-	$('#myCarousel').height($(window).height()-footer.height()-60);
-	$('#myCarouselInner').height($(window).height()-footer.height()-60);
-});
-$(window).resize(function () {
-	$('#myCarousel').height($(window).height()-footer.height()-60);
-	$('#myCarouselInner').height($(window).height()-footer.height()-60);
-});
+	if ($(window).height() < $(window).width()) {
+		$('#myCarousel').height($(window).height()-footer.height()-60);
+		$('#myCarouselInner').height($(window).height()-footer.height()-60);
+		footer.css('position','fixed');
+	} else {
+		$('#myCarousel').height($(window).width());
+		$('#myCarouselInner').height($(window).width());
+		footer.css('position','auto');
+	}
+
+}
+$(fixme);
+$(window).resize(fixme);
 </script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/docs.min.js"></script>
