@@ -19,23 +19,63 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Custom styles for this template -->
+
     <link href="carousel.css" rel="stylesheet">
   </head>
-<!-- NAVBAR
-================================================== -->
   <body>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div id='myCarouselInner' class="carousel-inner">
+        <div class="item active">
+          <img src="copertina.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption first-caption">
+              <!--<h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
 	
-  	<div id='landing' class="intro">
+  	<!--div id='landing' class="intro">
 	   <table width="100%" height="100%" align="center" valign="center" style="text-align: center">
 	   <tr><td>
 	      <img src="logo.png" alt="logo" />
 	   </td></tr>
 	   </table>
-		<!--div id='logo'>
-			<a href="#about"><img class="downArrow" src="logo.png"></a>
-		</div-->
-	</div>
+	</div-->
 
 
       <!-- START THE FEATURETTES -->
@@ -100,19 +140,32 @@ di pali in ghisa.</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
       <hr class="lavori-ultimo"></hr>
+    <div id='my-footer' class="row footer">
+        <div class="col-lg-offset-2 col-lg-8">
+	  <p style="font-size: 20px; text-align: right;">Via Fersina, 1 - 38057 Pergine Valsugana (Tn)<br>
+T. 339 3597854 - P.I. 02013060229<br>
+E-mail: info@trentinolavori.it</p>
+        </div>
+    </div>
 </div>
 
-<iframe width="100%" height="340" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Via%20Fersina%2C%20Pergine%20Valsugana%2C%20Trentino%2C%20Italy&key=AIzaSyBRFlb-xTkPWLn3vpHFD9y5cya82QWLOeg"></iframe> 
+<iframe id='my-maps-iframe' width="100%" height="310" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Via%20Fersina%2C%20Pergine%20Valsugana%2C%20Trentino%2C%20Italy&key=AIzaSyBRFlb-xTkPWLn3vpHFD9y5cya82QWLOeg"></iframe> 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.2.0-dist/assets/js/docs.min.js"></script>
 <script type="text/javascript">
 $(function () {
-	$('#landing').height($(window).height());
+	var footer = $('#my-footer')
+	$('#my-maps-iframe').css('margin-bottom',(footer.height() + 90) + 'px');
+	$('#myCarousel').height($(window).height()-footer.height()-60);
+	$('#myCarouselInner').height($(window).height()-footer.height()-60);
 });
 $(window).resize(function () {
-	$('#landing').height($(window).height());
+	$('#myCarousel').height($(window).height()-footer.height()-60);
+	$('#myCarouselInner').height($(window).height()-footer.height()-60);
 });
 </script>
     <script src="../../dist/js/bootstrap.min.js"></script>
