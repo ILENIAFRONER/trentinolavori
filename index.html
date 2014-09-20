@@ -35,7 +35,7 @@
       </ol>
       <div id='myCarouselInner' class="carousel-inner">
         <div class="item active">
-          <img src="copertina.jpg" alt="First slide">
+          <img src="copertina.jpg" class='img-responsive' alt="First slide">
           <div class="container">
             <div class="carousel-caption first-caption">
               <!--<h1>Example headline.</h1>
@@ -150,13 +150,14 @@ Design by: La Grafica</p>
       </div>
 
     <div id='my-footer' class="row footer">
-        <div class="col-lg-offset-2 col-lg-4">
-           <img src="tllogo.png">
-        </div>
-        <div class="col-lg-4">
-	  <p style="font-size: 20px; text-align: right;">Via Fersina, 1 - 38057 Pergine Valsugana (Tn)<br>
+
+        <div class="footer-row col-lg-offset-2 col-lg-7 col-md-offset-2 col-md-7 col-sm-offset-0 col-sm-11 col-xs-offset-0 col-xs-10">
+	  <p class='footer'>Via Fersina, 1 - 38057 Pergine Valsugana (Tn)<br>
 T. 339 3597854 - P.I. 02013060229<br>
 E-mail: info@trentinolavori.it</p>
+        </div>
+        <div class="footer-row col-lg-offset-0 col-lg-1 col-md-offset-0 col-md-1 col-sm-offset-0 col-sm-1 col-xs-offset-0 col-xs-2">
+           <img src="tllogo.png" class="footer">
         </div>
     </div>
 
@@ -174,7 +175,7 @@ E-mail: info@trentinolavori.it</p>
 function fixme () {
 	var footer = $('#my-footer')
 	$('#note-legali').css('margin-bottom',(footer.height() + 60) + 'px');
-	if ($(window).height() < $(window).width()) {
+	if ($(window).height() -100< $(window).width()) {
 		$('#myCarousel').height($(window).height()-footer.height()-60);
 		$('#myCarouselInner').height($(window).height()-footer.height()-60);
 		footer.css('position','fixed');
