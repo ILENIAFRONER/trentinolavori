@@ -3,6 +3,7 @@
 <head>
 <title>Page 1</title>
 
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <style type="text/css">
 <!--
@@ -20,7 +21,7 @@
 </head>
 <body bgcolor="#A0A0A0" vlink="blue" link="blue">
 <div id="page1-div" style="position:relative;width:1897px;height:4050px;">
-<img width="1897" height="4050" src="mockup001.png" alt="background image"/>
+<img id="my-img" width="1897" height="4050" src="mockup001.png" alt="background image"/>
 <p style="position:absolute;top:1100px;left:1239px;white-space:nowrap" class="ft00">Via Fersina, 1&#160;- 38057 Pergine Valsugana (Tn)&#160;&#160;</p>
 <p style="position:absolute;top:1123px;left:1332px;white-space:nowrap" class="ft00">T.&#160;</p>
 <p style="position:absolute;top:1123px;left:1353px;white-space:nowrap" class="ft01"><b>339 3597854&#160;- P.I. 02013060229</b></p>
@@ -69,5 +70,14 @@
 <p style="position:absolute;top:3948px;left:1029px;white-space:nowrap" class="ft08"><b>339 3597854</b>&#160;- C.F. - P.I. 0201306229 - Registro Imprese di Trento</p>
 <p style="position:absolute;top:3970px;left:849px;white-space:nowrap" class="ft07">Design by:&#160;La Grafica</p>
 </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+function lol () {
+$('#my-img').width($(window).width());
+$('#page1-div').children().each(function(e){})
+}
+$($('#my-img').width($(window).width()))
+$(window).resize(function() {$('#my-img').width($(window).width())})
+</script>
 </body>
 </html>
