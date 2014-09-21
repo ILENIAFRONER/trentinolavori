@@ -8,7 +8,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 1200px;
+  height: 600px;
   margin-bottom: 0px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -18,7 +18,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  height: 600px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -26,7 +26,7 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 2000px;
+  height: 600px;
 }
 
 /* RESPONSIVE CSS
@@ -65,28 +65,15 @@ div.row {
 }
 
 div.lavori {
+        margin-top: 110px;
+        margin-bottom: 70px;
 	padding-left: 0px;
 	padding-right: 0px;
 }
 
 hr {
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-hr.lavori {
-	margin-bottom: 70px;
-}
-
-hr.lavori-ultimo {
-	margin-top: 25px;
-	margin-bottom: 0px;
-}
-
-.intro {
-	position: relative;
-	background:url(copertina.jpg) no-repeat top center;
-	height: 2000px; /*aaaaaaaaaahhahha*/
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 div.storia {
@@ -100,7 +87,7 @@ div.note-legali {
 	color: white;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	background-color: #a91936;
+	background-color: #44535f;
 }
 
 div.footer {
@@ -110,7 +97,26 @@ div.footer {
     padding-bottom: 30px;	
     color: white;
     background-color: #44535f;
-    position: fixed;
-    bottom: 0;
+    /*position: fixed;
+    bottom: 0;*/
     width: 100%;
+}
+
+p.footer {
+font-size: 15px;
+text-align: right;
+margin-bottom: 0px;
+margin-top: 15px;
+}
+
+a.upper-footer {
+padding-right: 13px;
+padding-left: 13px;
+font-size: 17px;
+}
+
+div.pre-map {
+height:30px;
+background-color:#44535f;
+border-bottom: 2px solid white;
 }
