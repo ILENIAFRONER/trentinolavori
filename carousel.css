@@ -3,6 +3,35 @@ body {
   color: #5a5a5a;
 }
 
+a {
+color: white;
+text-decoration: underline;
+}
+
+/* unvisited link */
+a:link {
+color: white;
+text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+color: white;
+text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+color: white;
+text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+color: white;
+text-decoration: underline;
+} 
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -46,7 +75,7 @@ body {
 }
 
 .carousel-inner > .item > img {
-	height: auto;
+	height: 600px;
 }
 	
 /* PRAISE THE CHAOS GOD */
@@ -111,8 +140,13 @@ margin-top: 15px;
 
 a.upper-footer {
 padding-right: 13px;
-padding-left: 13px;
+/*padding-left: 13px;*/
 font-size: 17px;
+text-decoration: none;
+}
+
+img.upper-footer {
+padding-left: 13px;
 }
 
 div.pre-map {
