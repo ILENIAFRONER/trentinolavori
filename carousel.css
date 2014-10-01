@@ -1,6 +1,13 @@
+@font-face { font-family: OpenSans; src: url('opensans/OpenSans-Regular.ttf'); } 
+@font-face { font-family: OpenSans; font-weight: bold; src: url('opensans/OpenSans-Bold.ttf');}
+@font-face { font-family: OpenSans; font-weight: bolder; src: url('opensans/OpenSans-ExtraBold.ttf');}
+@font-face { font-family: OpenSans; font-weight: lighter; src: url('opensans/OpenSans-Regular.ttf'); }
+@font-face { font-family: OpenSans; font-weight: 500; src: url('opensans/OpenSans-Bold.ttf'); }
+
 body {
   padding-bottom: 0px;
   color: #5a5a5a;
+  font-family: "OpenSans";
 }
 
 a {
@@ -143,14 +150,14 @@ margin-top: 15px;
 a.upper-footer {
 padding-right: 13px;
 /*padding-left: 13px;*/
-font-size: 17px;
+font-size: 20px;
 text-decoration: none;
 }
 
 a.upper-footer-last {
 padding-right: 0px;
 /*padding-left: 13px;*/
-font-size: 17px;
+font-size: 20px;
 text-decoration: none;
 }
 
