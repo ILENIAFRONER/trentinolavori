@@ -124,7 +124,7 @@ div.note-legali {
 div.footer {
     border-top: 1px solid;
     border-bottom: 1px solid;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 30px;	
     color: white;
     background-color: #44535f;
@@ -163,4 +163,10 @@ div.pre-map {
 height:30px;
 background-color:#44535f;
 border-bottom: 2px solid white;
+}
+
+@media (max-width: 768px) {
+  .hide-if-small {
+  display: none;
+  }
 }
