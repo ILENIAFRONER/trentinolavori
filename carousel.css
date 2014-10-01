@@ -131,8 +131,8 @@ div.note-legali {
 div.footer {
     border-top: 1px solid;
     border-bottom: 1px solid;
-    padding-top: 15px;
-    padding-bottom: 30px;	
+/*    padding-top: 15px;
+    padding-bottom: 30px;	*/
     color: white;
     background-color: #44535f;
     /*position: fixed;
@@ -143,8 +143,10 @@ div.footer {
 p.footer {
 font-size: 15px;
 text-align: right;
-margin-bottom: 0px;
-margin-top: 25px;
+/*margin-bottom: 0px;
+margin-top: 25px;*/
+margin-top: 30px;
+margin-bottom: 30px;
 }
 
 a.upper-footer {
@@ -161,10 +163,28 @@ font-size: 16px;
 text-decoration: none;
 }
 
+p.upper-footer {
+margin-top: 30px;
+padding-right: 0px;
+padding-left: 0px;
+}
+
+p.upper-footer-right {
+margin-top: 30px;
+margin-bottom: 30px;
+padding-right: 0px;
+padding-left: 0px;
+}
+
 img.upper-footer {
-margin-bottom: 25px;
-margin-top: 20px;
+/*margin-bottom: 25px;
+margin-top: 20px;*/
 padding-left: 13px;
+}
+
+img.footer {
+margin-top: 30px;
+margin-bottom: 30px;
 }
 
 div.pre-map {
