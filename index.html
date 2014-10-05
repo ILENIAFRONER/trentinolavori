@@ -39,7 +39,7 @@
           <div id="divspecial" style="width:100%;height:100%;background:url(copertina.jpg) no-repeat;background-size:cover;background-position:center;";"></div>
           <div class="container">
             <div class="carousel-caption first-caption">
-	             <table height="550" align="center" valign="center" style="text-align: center">
+	             <table class="logotable" height="550" align="center" valign="center" style="text-align: center">
 	             <tr><td>
 	                <img src="logo-01.png" alt="TRENTINO LAVORI" width="200" height="200"/>
 	             </td></tr>
@@ -52,7 +52,7 @@
           <div id="divspecial" style="width:100%;height:100%;background:url(copertina2.JPG) no-repeat;background-size:cover;background-position:center;"></div>
           <div class="container">
             <div class="carousel-caption">
-	             <table height="550" align="center" valign="center" style="text-align: center">
+	             <table class="logotable" height="550" align="center" valign="center" style="text-align: center">
 	             <tr><td>
 	                <img src="logo-01.png" alt="TRENTINO LAVORI" width="200" height="200"/>
 	             </td></tr>
@@ -65,7 +65,7 @@
           <div id="divspecial" style="width:100%;height:100%;background:url(copertina3.JPG) no-repeat;background-size:cover;background-position:center;";"></div>          
           <div class="container">
             <div class="carousel-caption">
-	             <table height="550" align="center" valign="center" style="text-align: center">
+	             <table class="logotable" height="550" align="center" valign="center" style="text-align: center">
 	             <tr><td>
 	                <img src="logo-01.png" alt="TRENTINO LAVORI" width="200" height="200"/>
 	             </td></tr>
@@ -270,9 +270,19 @@ $('a[href=#azienda]').click(function(){
     $("html, body").animate({ scrollTop: $('#storia').offset().top }, 600);
     return false;
 });
-$().resize(function(){
-$('#divspecial').height()
-});
+function layout (){
+  if (($(window).height() / 2) > $('#my-footer').outerHeight()) {
+    $('.carousel').height($(window).height() - $('#my-footer').outerHeight());
+    $('.carousel .item').height($(window).height() - $('#my-footer').outerHeight());
+    $('.logotable').height($(window).height() - $('#my-footer').outerHeight() - 50);
+  } else {
+    $('.carousel').height($(window).height());
+    $('.carousel .item').height($(window).height());
+    $('.logotable').height($(window).height() - 50);
+  }
+}
+$(layout);
+$(window).resize(layout);
 </script>
 <script src="jquery.blueimp-gallery.min.js"></script>
   </body>
