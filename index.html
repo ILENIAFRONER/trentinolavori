@@ -90,7 +90,7 @@
               <p p class="upper-footer"><b>
               <a href="#azienda" class="upper-footer">AZIENDA</a>
               <br class="visible-xs-inline-block">
-              <a href="#" class="upper-footer">SERVIZI</a>
+              <a href="#servizi" class="upper-footer">SERVIZI</a>
               <br class="visible-xs-inline-block">
               <a target="_blank" href="trentinolavori_parco_macchine.pdf" class="upper-footer">I&nbsp;NOSTRI&nbsp;MEZZI</a>
               <br class="visible-xs-inline-block">
@@ -137,7 +137,7 @@ mercato e rispondendo alle esigenze di privati e industrie.
         </div>
       </div>
       
-      <div class="row">
+      <div id="servizi" class="row">
         <div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
           <!--first row-->
           <div class="row">
@@ -268,6 +268,10 @@ Design by: <a href="http://www.lagraficapergine.it/">La Grafica</a></p>
 <script type="text/javascript">
 $('a[href=#azienda]').click(function(){
     $("html, body").animate({ scrollTop: $('#storia').offset().top }, 600);
+    return false;
+});
+$('a[href=#servizi]').click(function(){
+    $("html, body").animate({ scrollTop: $('#servizi').offset().top }, 1000);
     return false;
 });
 function layout (){
