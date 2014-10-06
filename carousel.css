@@ -3,6 +3,7 @@
 @font-face { font-family: OpenSans; font-weight: bolder; src: url('opensans/OpenSans-Semibold.ttf');}
 @font-face { font-family: OpenSans; font-weight: lighter; src: url('opensans/OpenSans-Regular.ttf'); }
 @font-face { font-family: OpenSans; font-weight: 500; src: url('opensans/OpenSans-Semibold.ttf'); }
+@font-face { font-family: OpenSansCondensed; font-weight: 500; src: url('opensans/OpenSans-CondLight.ttf'); }
 
 body {
   padding-bottom: 0px;
