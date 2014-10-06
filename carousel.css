@@ -102,7 +102,7 @@ div.lavori {
 
 hr {
   padding-top: 1px;
-  background-color: #44535f;
+  background-color: #495a66;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
@@ -111,14 +111,14 @@ div.storia {
 	color: white;
 	padding-top: 55px;
 	padding-bottom: 55px;
-	background-color: #a91936;
+	background-color: #a2192a;
 }
 
 div.note-legali {
 	color: white;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	background-color: #44535f;
+	background-color: #495a66;
 }
 
 div.footer {
@@ -127,7 +127,7 @@ div.footer {
 /*    padding-top: 15px;
     padding-bottom: 30px;	*/
     color: white;
-    background-color: #44535f;
+    background-color: #495a66;
     /*position: fixed;
     bottom: 0;*/
     width: 100%;
@@ -182,7 +182,7 @@ margin-bottom: 30px;
 
 div.pre-map {
 height:30px;
-background-color:#44535f;
+background-color:#495a66;
 border-bottom: 2px solid white;
 }
 
