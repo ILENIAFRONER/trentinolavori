@@ -5,6 +5,9 @@
 @font-face { font-family: OpenSans; font-weight: 500; src: url('opensans/OpenSans-Semibold.ttf'); }
 @font-face { font-family: OpenSansCondensed; font-weight: 500; src: url('opensans/OpenSans-CondLight.ttf'); }
 
+#preload-01 { background: url(copertina2.JPG) no-repeat -9999px -9999px; }
+#preload-02 { background: url(copertina3.JPG) no-repeat -9999px -9999px; }
+
 body {
   padding-bottom: 0px;
   color: #5a5a5a;
