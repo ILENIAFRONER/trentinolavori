@@ -314,6 +314,12 @@ function layout (){
   $('#separator1').css('marginLeft', '0px');
   $('#separator2').css('marginLeft', '0px');
   pos1=pos2=1;
+  if ($(window).width() <= 768) {
+    $('[data-gallery]').data('gallery',null);
+    $('[data-gallery]').attr('href',null);
+  } else {
+    /*FIXME*/
+  }
   if (($(window).height() / 2) > $('#my-footer').outerHeight()) {
     $('.carousel').height($(window).height() - $('#my-footer').outerHeight());
     $('.carousel .item').height($(window).height() - $('#my-footer').outerHeight());
