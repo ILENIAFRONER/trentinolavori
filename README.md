@@ -1,6 +1,6 @@
 trentinolavori
 ==============
-[*] hail
+(*) hail
 OTHER TASKS
 [ ] prepare demo for d-day
 [ ] giocare ai videogames
